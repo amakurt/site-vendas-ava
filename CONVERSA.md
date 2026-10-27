@@ -54,6 +54,9 @@ Foram feitas 3 perguntas estratégicas para direcionamento do projeto:
 | [`site-vendas-ava.md`](./site-vendas-ava.md) | Plano de implementação e detalhamento técnico das tarefas. |
 | [`SESSION_LOG.md`](./SESSION_LOG.md) | Registro de entregas técnicas e changelog conforme as diretrizes do kit. |
 | [`CONVERSA.md`](./CONVERSA.md) | Este documento de persistência histórica de conversas e orientações. |
+| [`assets/logo-icon.jpg`](./assets/logo-icon.jpg) | Ícone oficial e favicon da AVA Systems. |
+| [`assets/brand-banner.jpg`](./assets/brand-banner.jpg) | Banner oficial de Sistemas, SaaS e Nuvem. |
+| [`assets/brand-pack/`](./assets/brand-pack/) | Pasta completa com todas as 11 imagens oficiais de identidade visual da marca (posts, stories, manuais de cor e logotipos). |
 | [`assets/google-icon.png`](./assets/google-icon.png) | Ícone oficial utilizado no selo de prova social do Google Reviews (4.9/5 estrelas). |
 
 ---
