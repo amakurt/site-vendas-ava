@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVA Systems | Software de Gestão, Inteligência & Automação de Vendas</title>
+  <meta name="description" content="Escale sua empresa com a AVA Systems. Plataforma completa de automação comercial, inteligência operacional e gestão inteligente de alta performance.">
+  <meta name="keywords" content="AVA Systems, automação de vendas, software de gestão, inteligência operacional, CRM, ERP, automação comercial">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="AVA Systems | Alta Performance em Gestão e Vendas">
+  <meta property="og:description" content="Automatize processos, aumente sua receita e tenha controle absoluto sobre sua operação comercial com a AVA Systems.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Tech Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#inicio" class="brand-logo" aria-label="AVA Systems Página Inicial">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L2 22h20L12 2zm0 4.5L18.5 19h-13L12 6.5z"/>
+          </svg>
+        </div>
+        <span class="brand-name">AVA <span>Systems</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#solucoes" class="nav-link">Soluções</a></li>
+        <li><a href="#plataforma" class="nav-link">Plataforma</a></li>
+        <li><a href="#planos" class="nav-link">Planos & Preços</a></li>
+        <li><a href="#depoimentos" class="nav-link">Clientes</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-secondary btn-sm" id="btnOpenDemoNav">Agendar Demo</button>
+        <a href="#planos" class="btn btn-primary btn-sm">Começar Agora</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu de Navegação">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="inicio">
+      <div class="container">
+        
+        <div class="hero-pill">
+          <span class="live-indicator"></span>
+          <span>AVA OS 4.0 • Nova Geração de Automação Comercial</span>
+        </div>
+
+        <h1 class="hero-title">
+          Escale suas Vendas e Operações com <span class="text-gradient">Inteligência Absoluta</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          A AVA Systems integra inteligência de processos, dashboards preditivos e automação de ponta a ponta para multiplicar a receita do seu negócio sem aumentar seu custo fixo.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#planos" class="btn btn-primary btn-lg">
+            <span>Contratar Plataforma</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <button class="btn btn-secondary btn-lg" id="btnOpenDemoHero">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            <span>Ver Demonstração Interativa</span>
+          </button>
+        </div>
+
+        <!-- Metrics Strip -->
+        <div class="hero-stats-row">
+          <div class="stat-item">
+            <div class="stat-number" data-target="340">+0%</div>
+            <div class="stat-label">Aumento Médio de Eficiência</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="99.98">0%</div>
+            <div class="stat-label">Disponibilidade Garantida SLA</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="450">+0</div>
+            <div class="stat-label">Empresas e Operações Ativas</div>
+          </div>
+        </div>
+
+        <!-- Interactive Platform Mockup -->
+        <div class="hero-mockup-wrapper" id="plataforma">
+          <div class="mockup-inner">
+            <div class="mockup-header">
+              <div class="window-dots">
+                <span class="window-dot close"></span>
+                <span class="window-dot min"></span>
+                <span class="window-dot max"></span>
+              </div>
+              <div class="mockup-tabs">
+                <button class="mockup-tab active" data-tab="visao-geral">Visão Geral</button>
+                <button class="mockup-tab" data-tab="automacao">Automação de Vendas</button>
+                <button class="mockup-tab" data-tab="analytics">BI & Inteligência</button>
+              </div>
+              <span style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 600;">● Conectado em Tempo Real</span>
+            </div>
+
+            <div class="mockup-content">
+              <div class="mockup-grid">
+                <div class="metric-card">
+                  <div class="metric-card-title">
+                    <span>Faturamento Mensal</span>
+                    <span class="metric-badge">+42.8%</span>
+                  </div>
+                  <div class="metric-card-value" id="mockupKpi1">R$ 489.250,00</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-card-title">
+                    <span>Oportunidades em Aberto</span>
+                    <span class="metric-badge">+18.5%</span>
+                  </div>
+                  <div class="metric-card-value" id="mockupKpi2">1.428 Leads</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-card-title">
+                    <span>Taxa de Conversão Automática</span>
+                    <span class="metric-badge">+31.2%</span>
+                  </div>
+                  <div class="metric-card-value" id="mockupKpi3">24.6%</div>
+                </div>
+              </div>
+
+              <div class="mockup-chart-placeholder">
+                <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 0.75rem;">
+                  <span style="font-size: 0.9rem; font-weight: 700; color: #FFFFFF;" id="chartTitle">Evolução de Receita & Conversões (Últimos 7 Meses)</span>
+                  <span style="font-size: 0.8rem; color: var(--accent-cyan);">Pico: R$ 512k</span>
+                </div>
+                <div class="chart-bars" id="chartBars">
+                  <div class="chart-bar-group">
+                    <div class="chart-bar" style="height: 45%;"></div>
+                    <span class="chart-bar-label">Mai</span>
+                  </div>
+                  <div class="chart-bar-group">
+                    <div class="chart-bar" style="height: 58%;"></div>
+                    <span class="chart-bar-label">Jun</span>
+                  </div>
+                  <div class="chart-bar-group">
+                    <div class="chart-bar" style="height: 65%;"></div>
+                    <span class="chart-bar-label">Jul</span>
+                  </div>
+                  <div class="chart-bar-group">
+                    <div class="chart-bar" style="height: 78%;"></div>
+                    <span class="chart-bar-label">Ago</span>
+                  </div>
+                  <div class="chart-bar-group">
+                    <div class="chart-bar" style="height: 85%;"></div>
+                    <span class="chart-bar-label">Set</span>
+                  </div>
+                  <div class="chart-bar-group">
+                    <div class="chart-bar" style="height: 92%;"></div>
+                    <span class="chart-bar-label">Out</span>
+                  </div>
+                  <div class="chart-bar-group">
+                    <div class="chart-bar" style="height: 100%;"></div>
+                    <span class="chart-bar-label">Nov (Atual)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Social Proof & Google Reviews Strip -->
+    <section class="social-proof-section">
+      <div class="container proof-container">
+        
+        <!-- Google Review Badge -->
+        <div class="google-review-badge">
+          <img src="assets/google-icon.png" alt="Google Avaliações" class="google-icon-img">
+          <div>
+            <div class="stars-rating">★★★★★</div>
+            <div class="rating-text">
+              <strong>4.9 / 5.0</strong> no Google Reviews (+320 avaliações)
+            </div>
+          </div>
+        </div>
+
+        <!-- Client Badges -->
+        <div class="client-logos-row">
+          <span class="client-logo-item">NEXUS TECH</span>
+          <span class="client-logo-item">LOGIX BRASIL</span>
+          <span class="client-logo-item">SOLARIS CORP</span>
+          <span class="client-logo-item">AURORA CAPITAL</span>
+          <span class="client-logo-item">VERITAS GROUP</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Solutions & Features Section -->
+    <section class="solutions-section" id="solucoes">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <span>Módulos de Alta Performance</span>
+          </div>
+          <h2 class="section-title">
+            Tudo o que sua empresa precisa para <span class="text-gradient">vender no piloto automático</span>
+          </h2>
+          <p class="section-description">
+            Substitua dezenas de ferramentas desconectadas por um ecossistema unificado, projetado especificamente para impulsionar a produtividade e faturamento.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <article class="glass-card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Automação de Vendas 360°</h3>
+            <p class="feature-desc">
+              Distribuição inteligente de leads, follow-ups automáticos e disparo de propostas comerciais sem intervenção manual.
+            </p>
+            <ul class="feature-bullets">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Disparos inteligentes por WhatsApp e E-mail
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Pipeline visual com drag-and-drop
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Regras de roteamento para equipes comerciais
+              </li>
+            </ul>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="glass-card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">BI & Inteligência Operacional</h3>
+            <p class="feature-desc">
+              Painéis executivos em tempo real com predição de faturamento, métricas de churn e desempenho individual de cada vendedor.
+            </p>
+            <ul class="feature-bullets">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Relatórios em PDF e Excel gerados com 1 clique
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Alertas automáticos de metas e desvios
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Algoritmo de previsão de demanda
+              </li>
+            </ul>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="glass-card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Hub Universal de Integrações</h3>
+            <p class="feature-desc">
+              Conexão nativa com os principais ERPs, CRMs, gateways de pagamento, plataformas de nota fiscal e ferramentas do mercado.
+            </p>
+            <ul class="feature-bullets">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                API REST completa e Webhooks instantâneos
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Sincronização bidirecional de cadastros
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Integração oficial WhatsApp Cloud API
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="planos">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span>Investimento Transparente</span>
+          </div>
+          <h2 class="section-title">
+            Planos escaláveis para <span class="text-gradient">qualquer estágio da sua empresa</span>
+          </h2>
+          <p class="section-description">
+            Sem contratos de fidelidade ocultos. Escolha o plano perfeito e comece a ver os resultados desde a primeira semana.
+          </p>
+
+          <!-- Annual / Monthly Toggle -->
+          <div class="billing-toggle-container">
+            <span class="toggle-label" id="labelMonthly">Mensal</span>
+            <label class="switch">
+              <input type="checkbox" id="billingToggle" checked aria-label="Alternar entre cobrança mensal e anual">
+              <span class="slider"></span>
+            </label>
+            <span class="toggle-label active" id="labelAnnual">Anual</span>
+            <span class="discount-badge">Economize 20%</span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Plan 1: Starter -->
+          <div class="glass-card pricing-card">
+            <div class="plan-header">
+              <h3 class="plan-name">Starter</h3>
+              <p class="plan-desc">Essencial para pequenas equipes estruturarem o processo de vendas.</p>
+            </div>
+            <div class="plan-price-wrapper">
+              <span class="plan-currency">R$</span>
+              <span class="plan-price" data-monthly="247" data-annual="197">197</span>
+              <span class="plan-period">/mês</span>
+            </div>
+            <ul class="plan-features-list">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Até 3 Usuários Simultâneos
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Pipeline Comercial Kanban
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Até 2.000 Contatos Ativos
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Disparos de E-mail Integrados
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                Integração Oficial WhatsApp API
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                Inteligência Preditiva e BI Avançado
+              </li>
+            </ul>
+            <button class="btn btn-secondary pricing-btn" onclick="selectPlan('Starter')">Contratar Starter</button>
+          </div>
+
+          <!-- Plan 2: Pro (Featured) -->
+          <div class="glass-card pricing-card featured">
+            <span class="featured-ribbon">Mais Escolhido • 94% de Aprovação</span>
+            <div class="plan-header">
+              <h3 class="plan-name">Professional</h3>
+              <p class="plan-desc">Para empresas que querem máxima automação, inteligência e conversão acelerada.</p>
+            </div>
+            <div class="plan-price-wrapper">
+              <span class="plan-currency">R$</span>
+              <span class="plan-price" data-monthly="497" data-annual="397">397</span>
+              <span class="plan-period">/mês</span>
+            </div>
+            <ul class="plan-features-list">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Até 10 Usuários Simultâneos
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Contatos e Leads Ilimitados
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Automação Completa via WhatsApp API Oficial
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Módulo de BI e Relatórios Preditivos
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Suporte Prioritário por Chat & WhatsApp
+              </li>
+            </ul>
+            <button class="btn btn-primary pricing-btn" onclick="selectPlan('Professional')">
+              <span>Contratar Professional</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Plan 3: Enterprise -->
+          <div class="glass-card pricing-card">
+            <div class="plan-header">
+              <h3 class="plan-name">Enterprise</h3>
+              <p class="plan-desc">Solução corporativa personalizada com SLA e infraestrutura dedicada.</p>
+            </div>
+            <div class="plan-price-wrapper">
+              <span class="plan-currency">R$</span>
+              <span class="plan-price" data-monthly="997" data-annual="797">797</span>
+              <span class="plan-period">/mês</span>
+            </div>
+            <ul class="plan-features-list">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Usuários Ilimitados
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Gerente de Conta & Onboarding VIP
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Desenvolvimento de Integrações Customizadas
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Auditoria de Segurança & Conformidade LGPD
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                SLA de Atendimento em 1 Hora (24/7)
+              </li>
+            </ul>
+            <button class="btn btn-secondary pricing-btn" onclick="selectPlan('Enterprise')">Falar com Consultor</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="depoimentos">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span>Resultados Comprovados</span>
+          </div>
+          <h2 class="section-title">
+            O que dizem os líderes que <span class="text-gradient">transformaram sua operação</span>
+          </h2>
+          <p class="section-description">
+            Depoimentos de empresas que alcançaram novos patamares de lucratividade após implementar o ecossistema AVA Systems.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="glass-card testimonial-card">
+            <p class="testimonial-quote">
+              "Reduzimos nosso ciclo de fechamento de 14 dias para apenas 4 dias. A automação de propostas e follow-up no WhatsApp da AVA mudou o patamar do nosso faturamento."
+            </p>
+            <div class="testimonial-user">
+              <div class="user-avatar">RC</div>
+              <div class="user-info">
+                <h4>Rodrigo Caldas</h4>
+                <p>Diretor Comercial, Nexus Tech</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card testimonial-card">
+            <p class="testimonial-quote">
+              "A clareza dos dados de BI em tempo real nos permitiu cortar gargalos operacionais e economizar mais de R$ 80.000,00 nos primeiros 3 meses de uso."
+            </p>
+            <div class="testimonial-user">
+              <div class="user-avatar">MS</div>
+              <div class="user-info">
+                <h4>Mariana Silveira</h4>
+                <p>COO, Logix Brasil</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card testimonial-card">
+            <p class="testimonial-quote">
+              "O suporte e a estabilidade da plataforma são impecáveis. A integração com nosso ERP levou menos de 48 horas e nunca tivemos 1 minuto de queda."
+            </p>
+            <div class="testimonial-user">
+              <div class="user-avatar">AT</div>
+              <div class="user-info">
+                <h4>André Torres</h4>
+                <p>Head de Tecnologia, Aurora Capital</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span>Tire suas Dúvidas</span>
+          </div>
+          <h2 class="section-title">
+            Perguntas <span class="text-gradient">Frequentes</span>
+          </h2>
+          <p class="section-description">
+            Respostas claras para as principais dúvidas sobre contratação, migração e implementação da AVA Systems.
+          </p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Como funciona o processo de implantação da AVA Systems?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>A implantação é ágil e assistida. Nossa equipe técnica guia você na configuração dos fluxos, importação de base de clientes e treinamento da sua equipe em menos de 5 dias úteis.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Existe contrato de fidelidade ou taxa de cancelamento?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Não! No plano mensal você tem total liberdade para pausar ou cancelar a qualquer momento sem nenhuma multa. No plano anual, você aproveita o desconto de 20% com garantia incondicional de 15 dias.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>A AVA Systems se integra com o meu sistema atual?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Sim! Temos APIs abertas e conectores prontos para os maiores ERPs, CRMs e gateways do mercado, além de webhooks em tempo real para sincronização com bancos de dados e sistemas legados.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Como funciona a segurança e privacidade dos meus dados?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Utilizamos servidores de alta segurança em nuvem com criptografia de ponta a ponta (AES-256), backups diários redundantes e total conformidade com a Lei Geral de Proteção de Dados (LGPD).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lead Capture / Contact Section -->
+    <section class="contact-section" id="contato">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-text">
+            <h2>Pronto para acelerar o crescimento da sua empresa?</h2>
+            <p>
+              Preencha o formulário ao lado para falar com um de nossos especialistas em arquitetura de vendas ou agendar uma demonstração guiada do sistema.
+            </p>
+            <ul class="contact-perks">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Atendimento consultivo em menos de 15 minutos
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Diagnóstico gratuito de processos comerciais
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Ambiente de teste liberado sem compromisso
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="leadForm">
+            <div class="form-group">
+              <label for="leadName">Seu Nome Completo</label>
+              <input type="text" id="leadName" class="form-input" placeholder="Ex: Lucas Ferreira" required>
+            </div>
+            <div class="form-group">
+              <label for="leadEmail">E-mail Corporativo</label>
+              <input type="email" id="leadEmail" class="form-input" placeholder="lucas@suaempresa.com" required>
+            </div>
+            <div class="form-group">
+              <label for="leadPhone">WhatsApp com DDD</label>
+              <input type="tel" id="leadPhone" class="form-input" placeholder="(11) 98765-4321" required>
+            </div>
+            <div class="form-group">
+              <label for="leadTeam">Tamanho da sua equipe</label>
+              <select id="leadTeam" class="form-select">
+                <option value="1-5">1 a 5 colaboradores</option>
+                <option value="6-20">6 a 20 colaboradores</option>
+                <option value="21-50">21 a 50 colaboradores</option>
+                <option value="50+">Mais de 50 colaboradores</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+              <span>Solicitar Demonstração VIP</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="brand-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2L2 22h20L12 2zm0 4.5L18.5 19h-13L12 6.5z"/>
+              </svg>
+            </div>
+            <span class="brand-name">AVA <span>Systems</span></span>
+          </a>
+          <p>
+            Soluções completas em software, inteligência operacional e automação de processos comerciais para empresas em alta escala.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Plataforma</h4>
+          <ul class="footer-links">
+            <li><a href="#solucoes">Automação de Vendas</a></li>
+            <li><a href="#solucoes">BI & Inteligência</a></li>
+            <li><a href="#solucoes">Hub de Integrações</a></li>
+            <li><a href="#plataforma">Dashboard Live</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Planos</h4>
+          <ul class="footer-links">
+            <li><a href="#planos">Plano Starter</a></li>
+            <li><a href="#planos">Plano Professional</a></li>
+            <li><a href="#planos">Plano Enterprise</a></li>
+            <li><a href="#faq">Políticas de Garantia</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Institucional</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Sobre a AVA</a></li>
+            <li><a href="#faq">Perguntas Frequentes</a></li>
+            <li><a href="#contato">Fale Conosco</a></li>
+            <li><a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp Comercial</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 AVA Systems Tecnologia Ltda. Todos os direitos reservados.</span>
+        <span>CNPJ: 00.000.000/0001-00 • Segurança e Privacidade Garantidas</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20os%20planos%20da%20AVA%20Systems" 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="Falar com a AVA Systems no WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <!-- Social Toast (Real-Time Proof) -->
+  <div class="social-toast" id="socialToast">
+    <div class="toast-avatar" id="toastAvatar">LM</div>
+    <div class="toast-content">
+      <p id="toastMessage">Lucas M. acabou de contratar o Plano Professional</p>
+      <span>há 4 minutos • São Paulo, SP</span>
+    </div>
+  </div>
+
+  <!-- Interactive Modal for Demo / Plan Purchase -->
+  <div class="modal-overlay" id="demoModal">
+    <div class="modal-box">
+      <button class="modal-close" id="btnCloseModal" aria-label="Fechar Modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <div class="section-badge" style="margin-bottom: 0.75rem;">
+          <span id="modalBadge">Demonstração Interativa</span>
+        </div>
+        <h3 style="font-size: 1.65rem; color: #FFFFFF;" id="modalTitle">Experimente a AVA Systems</h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;" id="modalSubtitle">
+          Veja a plataforma em funcionamento com dados da sua empresa ou acesse um ambiente sandbox de testes.
+        </p>
+      </div>
+
+      <form id="modalForm">
+        <div class="form-group">
+          <label for="modalName">Seu Nome</label>
+          <input type="text" id="modalName" class="form-input" placeholder="Seu nome" required>
+        </div>
+        <div class="form-group">
+          <label for="modalPhone">WhatsApp</label>
+          <input type="tel" id="modalPhone" class="form-input" placeholder="(11) 98765-4321" required>
+        </div>
+        <div class="form-group">
+          <label for="modalPlanSelected">Plano ou Interesse</label>
+          <input type="text" id="modalPlanSelected" class="form-input" value="Demonstração da Plataforma" readonly style="opacity: 0.85;">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.75rem;">
+          <span>Continuar no WhatsApp com Consultor</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
