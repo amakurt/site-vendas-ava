@@ -46,3 +46,8 @@ Desenvolvimento e publicação da Landing Page de Alta Conversão da **AVA Syste
 ### 🧪 Verificação e Testes
 - Testado visualmente e funcionalmente via `browser_subagent` em `http://localhost:3000`.
 - Todas as interações (switch de preços, abas do mockup, expansão do FAQ e abertura do modal) validadas com sucesso.
+
+### 📦 Sincronização & Persistência
+- Criado arquivo `CONVERSA.md` documentando todas as interações e orientações para retomada do projeto no PC de casa.
+- Repositório sincronizado e enviado para o GitHub (`amakurt/site-vendas-ava`).
+
