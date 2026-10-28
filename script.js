@@ -31,51 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Pricing Switch (Mensal / Anual)
-  const billingToggle = document.getElementById('billingToggle');
-  const labelMonthly = document.getElementById('labelMonthly');
-  const labelAnnual = document.getElementById('labelAnnual');
-  const priceElements = document.querySelectorAll('.plan-price');
-
-  function updatePricing() {
-    const isAnnual = billingToggle.checked;
-    
-    if (isAnnual) {
-      labelAnnual.classList.add('active');
-      labelMonthly.classList.remove('active');
-    } else {
-      labelMonthly.classList.add('active');
-      labelAnnual.classList.remove('active');
-    }
-
-    priceElements.forEach(el => {
-      const targetVal = isAnnual ? el.getAttribute('data-annual') : el.getAttribute('data-monthly');
-      
-      // Quick subtle number animation
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(-6px)';
-      setTimeout(() => {
-        el.textContent = targetVal;
-        el.style.transition = 'all 0.25s ease';
-        el.style.opacity = '1';
-        el.style.transform = 'translateY(0)';
-      }, 150);
-    });
-  }
-
-  if (billingToggle) {
-    billingToggle.addEventListener('change', updatePricing);
-    labelMonthly.addEventListener('click', () => {
-      billingToggle.checked = false;
-      updatePricing();
-    });
-    labelAnnual.addEventListener('click', () => {
-      billingToggle.checked = true;
-      updatePricing();
-    });
-  }
-
-  // 3. Interactive Mockup Tabs & Dynamic Data
+  // 2. Interactive Mockup Tabs & Dynamic Data
   const mockupTabs = document.querySelectorAll('.mockup-tab');
   const mockupKpi1 = document.getElementById('mockupKpi1');
   const mockupKpi2 = document.getElementById('mockupKpi2');

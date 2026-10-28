@@ -42,7 +42,6 @@
         <li><a href="#sistemas" class="nav-link">Nossos Sistemas</a></li>
         <li><a href="#solucoes" class="nav-link">Soluções</a></li>
         <li><a href="#plataforma" class="nav-link">Plataforma</a></li>
-        <li><a href="#planos" class="nav-link">Planos</a></li>
         <li><a href="#depoimentos" class="nav-link">Clientes</a></li>
         <li><a href="#faq" class="nav-link">FAQ</a></li>
       </ul>
@@ -528,154 +527,6 @@
       </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section class="pricing-section" id="planos">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-badge">
-            <span>Investimento Transparente</span>
-          </div>
-          <h2 class="section-title">
-            Planos escaláveis para <span class="text-gradient">qualquer estágio da sua empresa</span>
-          </h2>
-          <p class="section-description">
-            Sem contratos de fidelidade ocultos. Escolha o plano perfeito e comece a ver os resultados desde a primeira semana.
-          </p>
-
-          <!-- Annual / Monthly Toggle -->
-          <div class="billing-toggle-container">
-            <span class="toggle-label" id="labelMonthly">Mensal</span>
-            <label class="switch">
-              <input type="checkbox" id="billingToggle" checked aria-label="Alternar entre cobrança mensal e anual">
-              <span class="slider"></span>
-            </label>
-            <span class="toggle-label active" id="labelAnnual">Anual</span>
-            <span class="discount-badge">Economize 20%</span>
-          </div>
-        </div>
-
-        <div class="pricing-grid">
-          <!-- Plan 1: Starter -->
-          <div class="glass-card pricing-card">
-            <div class="plan-header">
-              <h3 class="plan-name">Starter</h3>
-              <p class="plan-desc">Essencial para pequenas equipes estruturarem o processo de vendas.</p>
-            </div>
-            <div class="plan-price-wrapper">
-              <span class="plan-currency">R$</span>
-              <span class="plan-price" data-monthly="247" data-annual="197">197</span>
-              <span class="plan-period">/mês</span>
-            </div>
-            <ul class="plan-features-list">
-              <li>
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                Até 3 Usuários Simultâneos
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                Pipeline Comercial Kanban
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                Até 2.000 Contatos Ativos
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                Disparos de E-mail Integrados
-              </li>
-              <li class="disabled">
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                Integração Oficial WhatsApp API
-              </li>
-              <li class="disabled">
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                Inteligência Preditiva e BI Avançado
-              </li>
-            </ul>
-            <button class="btn btn-secondary pricing-btn" onclick="selectPlan('Starter')">Contratar Starter</button>
-          </div>
-
-          <!-- Plan 2: Pro (Featured) -->
-          <div class="glass-card pricing-card featured">
-            <span class="featured-ribbon">Mais Escolhido • 94% de Aprovação</span>
-            <div class="plan-header">
-              <h3 class="plan-name">Professional</h3>
-              <p class="plan-desc">Para empresas que querem máxima automação, inteligência e conversão acelerada.</p>
-            </div>
-            <div class="plan-price-wrapper">
-              <span class="plan-currency">R$</span>
-              <span class="plan-price" data-monthly="497" data-annual="397">397</span>
-              <span class="plan-period">/mês</span>
-            </div>
-            <ul class="plan-features-list">
-              <li>
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                Até 10 Usuários Simultâneos
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                Contatos e Leads Ilimitados
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                Automação Completa via WhatsApp API Oficial
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                Módulo de BI e Relatórios Preditivos
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                Suporte Prioritário por Chat & WhatsApp
-              </li>
-            </ul>
-            <button class="btn btn-primary pricing-btn" onclick="selectPlan('Professional')">
-              <span>Contratar Professional</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </button>
-          </div>
-
-          <!-- Plan 3: Enterprise -->
-          <div class="glass-card pricing-card">
-            <div class="plan-header">
-              <h3 class="plan-name">Enterprise</h3>
-              <p class="plan-desc">Solução corporativa personalizada com SLA e infraestrutura dedicada.</p>
-            </div>
-            <div class="plan-price-wrapper">
-              <span class="plan-currency">R$</span>
-              <span class="plan-price" data-monthly="997" data-annual="797">797</span>
-              <span class="plan-period">/mês</span>
-            </div>
-            <ul class="plan-features-list">
-              <li>
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                Usuários Ilimitados
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                Gerente de Conta & Onboarding VIP
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                Desenvolvimento de Integrações Customizadas
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                Auditoria de Segurança & Conformidade LGPD
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                SLA de Atendimento em 1 Hora (24/7)
-              </li>
-            </ul>
-            <button class="btn btn-secondary pricing-btn" onclick="selectPlan('Enterprise')">Falar com Consultor</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Testimonials Section -->
     <section class="testimonials-section" id="depoimentos">
       <div class="container">
@@ -878,29 +729,19 @@
           <h4>Nossos Sistemas</h4>
           <ul class="footer-links">
             <li><a href="kit-assessor.html">Kit-Assessor WhatsApp</a></li>
+            <li><a href="https://137.131.160.171.nip.io/#" target="_blank" rel="noopener">KIT OS Web App</a></li>
             <li><a href="edupsychpro.html">EdupsychPro</a></li>
-            <li><a href="#sistemas">Vitrine Completa</a></li>
-            <li><a href="#planos">Planos & Licenças</a></li>
+            <li><a href="https://app.edupsychpro.tech/" target="_blank" rel="noopener">EdupsychPro Web App</a></li>
           </ul>
         </div>
 
         <div class="footer-column">
           <h4>Plataforma</h4>
           <ul class="footer-links">
+            <li><a href="#sistemas">Vitrine de Softwares</a></li>
             <li><a href="#solucoes">Automação de Vendas</a></li>
             <li><a href="#solucoes">BI & Inteligência</a></li>
-            <li><a href="#solucoes">Hub de Integrações</a></li>
             <li><a href="#plataforma">Dashboard Live</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h4>Planos</h4>
-          <ul class="footer-links">
-            <li><a href="#planos">Plano Starter</a></li>
-            <li><a href="#planos">Plano Professional</a></li>
-            <li><a href="#planos">Plano Enterprise</a></li>
-            <li><a href="#faq">Políticas de Garantia</a></li>
           </ul>
         </div>
 
@@ -923,7 +764,7 @@
   </footer>
 
   <!-- Floating WhatsApp CTA -->
-  <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20os%20planos%20da%20AVA%20Systems" 
+  <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20os%20sistemas%20da%20AVA%20Systems" 
      class="floating-whatsapp" 
      target="_blank" 
      rel="noopener" 

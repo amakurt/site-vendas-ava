@@ -97,5 +97,11 @@ Implementação da **Vitrine de Sistemas Proprietários da AVA Systems** com sup
    - **Kit-Assessor Pessoal (KIT OS):** Integrado o endereço da aplicação (`https://137.131.160.171.nip.io/#`) com botão de acesso à plataforma web e landing page estruturada de apresentação.
    - Adicionada opção de contratação direta consultiva via WhatsApp abaixo dos botões de ação de cada card.
 
+7. **Remoção da Seção Genérica de Planos (`#planos`):**
+   - Removida a seção de preços genéricos da página principal (`index.html`), mantendo os planos específicos e contextualizados dentro dos cards de cada sistema e em suas respectivas landing pages.
+   - Atualizados os links de navegação do Navbar (5 links essenciais) e as colunas do Rodapé.
+   - Limpeza do código de toggle de preços genéricos no `script.js`.
+
+
 
 

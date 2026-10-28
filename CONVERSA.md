@@ -119,6 +119,15 @@ Foram feitas 3 perguntas estratégicas para direcionamento do projeto:
 - Vinculado o endereço do **Kit-Assessor (KIT OS)** (`https://137.131.160.171.nip.io/#`) com acesso direto e landing page `kit-assessor.html` atuando como a página de vendas oficial que ele ainda não tinha.
 - Adicionadas ações rápidas para acesso web e contratação consultiva direta.
 
+### 🔹 Mensagem 6 - Usuário (Remoção da Seção Genérica de Planos):
+> *"precisa tirar essa sessão: Planos escaláveis para qualquer estágio da sua empresa já que cada sistema tem seus planos"*
+
+**Ação:**
+- Removida a seção genérica de planos (`#planos`) de `index.html`.
+- Ajustada a navegação do Navbar e as colunas do Rodapé.
+- Limpeza dos scripts do alternador de planos genéricos no `script.js`.
+- Validação no `checklist.py` 100% aprovada (6/6).
+
 ---
 
 ## 🚀 Próximos Passos Sugeridos
