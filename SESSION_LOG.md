@@ -102,6 +102,12 @@ Implementação da **Vitrine de Sistemas Proprietários da AVA Systems** com sup
    - Atualizados os links de navegação do Navbar (5 links essenciais) e as colunas do Rodapé.
    - Limpeza do código de toggle de preços genéricos no `script.js`.
 
+8. **Remoção do Mockup Genérico de Dashboard ("Visão Geral" / `#plataforma`):**
+   - Removido o bloco de mockup genérico do Hero que continha métricas fictícias de ERP ("Visão Geral", faturamento, leads genéricos).
+   - O fluxo agora direciona o usuário imediatamente para a Vitrine de Sistemas proprietários da AVA Systems (Kit-Assessor e EdupsychPro), que já contêm seus próprios simuladores e dados reais.
+   - Limpeza no Navbar e remoção do código JavaScript correspondente em `script.js`.
+
+
 
 
 

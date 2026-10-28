@@ -128,6 +128,15 @@ Foram feitas 3 perguntas estratégicas para direcionamento do projeto:
 - Limpeza dos scripts do alternador de planos genéricos no `script.js`.
 - Validação no `checklist.py` 100% aprovada (6/6).
 
+### 🔹 Mensagem 7 - Usuário (Remoção do Mockup "Visão Geral"):
+> *"o visão geral tambem não faz sentido ter ai"*
+
+**Ação:**
+- Removido o mockup genérico de dashboard ("Visão Geral" / `#plataforma`) da Hero section.
+- Hero agora flui de forma concisa e direta para a Prova Social e para os cards de destaque dos sistemas reais (**Kit-Assessor** e **EdupsychPro**).
+- Limpeza dos links de navegação e do código JavaScript correspondente.
+- Validação 100% aprovada pelo script de auditoria `checklist.py` (6/6).
+
 ---
 
 ## 🚀 Próximos Passos Sugeridos

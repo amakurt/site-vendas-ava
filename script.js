@@ -31,57 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Interactive Mockup Tabs & Dynamic Data
-  const mockupTabs = document.querySelectorAll('.mockup-tab');
-  const mockupKpi1 = document.getElementById('mockupKpi1');
-  const mockupKpi2 = document.getElementById('mockupKpi2');
-  const mockupKpi3 = document.getElementById('mockupKpi3');
-  const chartTitle = document.getElementById('chartTitle');
-  const chartBars = document.querySelectorAll('.chart-bar');
-
-  const tabDatasets = {
-    'visao-geral': {
-      title: 'Evolução de Receita & Conversões (Últimos 7 Meses)',
-      kpis: ['R$ 489.250,00', '1.428 Leads', '24.6%'],
-      barHeights: ['45%', '58%', '65%', '78%', '85%', '92%', '100%']
-    },
-    'automacao': {
-      title: 'Mensagens e Follow-ups Automatizados (Disparos Diários)',
-      kpis: ['18.940 Envios', '98.2% Abertura', '34.8% Resposta'],
-      barHeights: ['30%', '42%', '55%', '70%', '82%', '95%', '100%']
-    },
-    'analytics': {
-      title: 'Índice de Produtividade Comercial por Vendedor',
-      kpis: ['3.4x Agilidade', 'R$ 82.400 / Vendedor', '99.2% SLA'],
-      barHeights: ['50%', '62%', '60%', '75%', '88%', '90%', '98%']
-    }
-  };
-
-  mockupTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      mockupTabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-
-      const dataKey = tab.getAttribute('data-tab');
-      const data = tabDatasets[dataKey];
-
-      if (data) {
-        chartTitle.textContent = data.title;
-        mockupKpi1.textContent = data.kpis[0];
-        mockupKpi2.textContent = data.kpis[1];
-        mockupKpi3.textContent = data.kpis[2];
-
-        chartBars.forEach((bar, index) => {
-          bar.style.height = '0%';
-          setTimeout(() => {
-            bar.style.height = data.barHeights[index] || '50%';
-          }, 100);
-        });
-      }
-    });
-  });
-
-  // 4. Stats Counter Animation (IntersectionObserver)
+  // 2. Stats Counter Animation (IntersectionObserver)
   const statsElements = document.querySelectorAll('.stat-number');
   let animated = false;
 
