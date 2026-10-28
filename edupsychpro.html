@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EdupsychPro • Software de Gestão e Laudos para Psicopedagogos</title>
+  <meta name="description" content="A plataforma definitiva para psicopedagogos e neuropsicopedagogos. Prontuários digitais, anamnese estruturada, laudos em PDF e conformidade LGPD.">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="EdupsychPro • Software de Gestão e Laudos para Psicopedagogos">
+  <meta property="og:description" content="Software completo de gestão clínica, anamneses estruturadas e emissão de laudos em PDF para psicopedagogos e neuropsicopedagogos.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo-icon.jpg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/jpeg" href="assets/logo-icon.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .subpage-nav {
+      background: rgba(6, 21, 43, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--card-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 1rem 0;
+    }
+    .subpage-nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color var(--transition-fast);
+    }
+    .back-btn:hover {
+      color: var(--accent-cyan);
+    }
+    .hero-landing {
+      padding: 5rem 0 4rem 0;
+      text-align: center;
+    }
+    .clinical-showcase-box {
+      max-width: 860px;
+      margin: 3rem auto 0 auto;
+      background: #040e1e;
+      border: 1px solid rgba(0, 210, 211, 0.35);
+      border-radius: 20px;
+      box-shadow: 0 16px 50px rgba(0, 0, 0, 0.65);
+      overflow: hidden;
+      text-align: left;
+    }
+    .clinical-topbar {
+      background: rgba(30, 107, 255, 0.12);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 1.25rem 1.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .clinical-body {
+      padding: 2rem;
+    }
+    .patient-header-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 1.25rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .pdf-banner-action {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(135deg, rgba(30, 107, 255, 0.15), rgba(0, 210, 211, 0.15));
+      border: 1px solid rgba(0, 210, 211, 0.35);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      .patient-header-grid {
+        grid-template-columns: 1fr;
+      }
+      .pdf-banner-action {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Glowing Tech Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+  </div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Subpage Navigation -->
+  <header class="subpage-nav">
+    <div class="container subpage-nav-inner">
+      <a href="index.html#sistemas" class="back-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Voltar para AVA Systems</span>
+      </a>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20conhecer%20e%20testar%20o%20EdupsychPro%20para%20psicopedagogos!" 
+           class="btn btn-primary btn-sm" 
+           target="_blank" 
+           rel="noopener">
+          <span>Testar EdupsychPro</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Product Hero -->
+    <section class="hero-landing">
+      <div class="container">
+        
+        <div class="section-badge" style="margin-bottom: 1.25rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 0 1 .665 6.479A11.952 11.952 0 0 0 12 20.055a11.952 11.952 0 0 0-6.824-2.998 12.078 12.078 0 0 1 .665-6.479L12 14z"/></svg>
+          <span>Desenvolvido para Psicopedagogos e Neuropsicopedagogos</span>
+        </div>
+
+        <h1 class="section-title" style="font-size: clamp(2.2rem, 5vw, 3.5rem); max-width: 900px; margin: 0 auto 1.5rem auto;">
+          Menos Tempo Preenchendo Papéis, <span class="text-gradient">Mais Tempo Transformando Vidas</span>
+        </h1>
+
+        <p class="section-description" style="max-width: 760px; margin: 0 auto 2.5rem auto;">
+          O <strong>EdupsychPro</strong> é o software definitivo para sua prática clínica. Centralize prontuários digitais, padronize anamneses guiadas, emita relatórios e laudos com 1 clique e garanta 100% de conformidade com a LGPD.
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20contratar%20o%20EdupsychPro%20com%20condi%C3%A7%C3%A3o%20especial!" 
+             class="btn btn-primary btn-lg" 
+             target="_blank" 
+             rel="noopener">
+            <span>Começar Agora com 7 Dias Grátis</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#recursos" class="btn btn-secondary btn-lg">
+            <span>Ver Demonstração de Recursos</span>
+          </a>
+        </div>
+
+        <!-- Realistic Clinical Dashboard Mockup -->
+        <div class="clinical-showcase-box">
+          <div class="clinical-topbar">
+            <div>
+              <div style="font-weight: 800; color: #FFFFFF; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--accent-cyan);">●</span> EdupsychPro Clínico • Painel do Paciente
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Protocolo de Avaliação Psicopedagógica Atualizado • LGPD Ativo</div>
+            </div>
+            <div>
+              <span class="product-status-tag">Em Atendimento Ativo</span>
+            </div>
+          </div>
+
+          <div class="clinical-body">
+            
+            <div class="patient-header-grid">
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Paciente Avaliado</div>
+                <div style="font-size: 1.15rem; font-weight: 700; color: #FFFFFF; margin-top: 0.2rem;">Lucas Monteiro Silva</div>
+                <div style="font-size: 0.85rem; color: var(--text-secondary);">9 anos • 4º Ano Ensino Fundamental</div>
+              </div>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Queixa Principal</div>
+                <div style="font-size: 0.95rem; font-weight: 600; color: var(--accent-cyan); margin-top: 0.2rem;">Dificuldade de Leitura & Foco</div>
+              </div>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Status Anamnese</div>
+                <div style="font-size: 0.95rem; font-weight: 700; color: #52c41a; margin-top: 0.2rem;">✔ 100% Completa</div>
+              </div>
+            </div>
+
+            <!-- Cognitive Skills Overview -->
+            <div style="margin-bottom: 1.5rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                <span style="font-weight: 700; color: #FFFFFF; font-size: 0.95rem;">Mapeamento de Habilidades Psicopedagógicas:</span>
+                <span style="font-size: 0.8rem; color: var(--accent-cyan);">8 Sessões de Intervenção Concluídas</span>
+              </div>
+              
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;">
+                <div class="glass-card" style="padding: 1rem;">
+                  <div style="font-size: 0.8rem; color: var(--text-muted);">Atenção Sustentada</div>
+                  <div style="font-size: 1.1rem; font-weight: 800; color: #FFFFFF; margin: 0.25rem 0;">+48% Evolução</div>
+                  <div style="height: 6px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                    <div style="height: 100%; width: 78%; background: var(--gradient-brand);"></div>
+                  </div>
+                </div>
+
+                <div class="glass-card" style="padding: 1rem;">
+                  <div style="font-size: 0.8rem; color: var(--text-muted);">Decodificação Leitora</div>
+                  <div style="font-size: 1.1rem; font-weight: 800; color: #FFFFFF; margin: 0.25rem 0;">+62% Evolução</div>
+                  <div style="height: 6px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                    <div style="height: 100%; width: 85%; background: var(--gradient-brand);"></div>
+                  </div>
+                </div>
+
+                <div class="glass-card" style="padding: 1rem;">
+                  <div style="font-size: 0.8rem; color: var(--text-muted);">Raciocínio Lógico</div>
+                  <div style="font-size: 1.1rem; font-weight: 800; color: #FFFFFF; margin: 0.25rem 0;">+35% Evolução</div>
+                  <div style="height: 6px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                    <div style="height: 100%; width: 68%; background: var(--gradient-brand);"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PDF Generation Banner -->
+            <div class="pdf-banner-action">
+              <div>
+                <div style="font-weight: 700; color: #FFFFFF; font-size: 1rem;">Laudo e Parecer Psicopedagógico Pronto</div>
+                <div style="font-size: 0.85rem; color: var(--text-secondary);">Gerado automaticamente com seu timbre profissional, dados dos testes e assinatura digital.</div>
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="alert('Demonstração: Laudo em PDF gerado com sucesso!')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Baixar Laudo (PDF)</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Key Modules / Features Section -->
+    <section id="recursos" style="background: rgba(255, 255, 255, 0.015); border-top: 1px solid rgba(255, 255, 255, 0.05); border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span>Funcionalidades Clínicas</span>
+          </div>
+          <h2 class="section-title">
+            Tudo o que você precisa em uma <span class="text-gradient">plataforma intuitiva e segura</span>
+          </h2>
+          <p class="section-description">
+            Criado em parceria com especialistas da psicopedagogia para atender as exigências reais do consultório.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="glass-card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="feature-title">Prontuário Digital & Anamnese Guiada</h3>
+            <p class="feature-desc">
+              Formulários estruturados cobrindo gestação, desenvolvimento motor, histórico escolar, linguagem e rotina familiar.
+            </p>
+          </div>
+
+          <div class="glass-card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <h3 class="feature-title">Gerador de Laudos e Pareceres</h3>
+            <p class="feature-desc">
+              Escreva relatórios de devolução para escolas e médicos em minutos com modelos validados e exportação elegante em PDF.
+            </p>
+          </div>
+
+          <div class="glass-card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M7 15h0M2 9.5h20"/></svg>
+            </div>
+            <h3 class="feature-title">Gestão Financeira & Recibos</h3>
+            <p class="feature-desc">
+              Controle pacotes de sessões contratadas, pagamentos recebidos, pendências e emissão instantânea de recibos para os pais.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section for EdupsychPro -->
+    <section style="background: radial-gradient(circle at 50% 50%, rgba(30, 107, 255, 0.12) 0%, transparent 70%);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span>Investimento para seu Consultório</span>
+          </div>
+          <h2 class="section-title">
+            Escolha o plano ideal para a <span class="text-gradient">sua prática profissional</span>
+          </h2>
+          <p class="section-description">
+            Sem fidelidade. Teste 7 dias grátis com suporte humanizado e migração dos seus dados.
+          </p>
+        </div>
+
+        <div style="max-width: 500px; margin: 0 auto;">
+          <div class="glass-card pricing-card featured" style="padding: 3rem 2.5rem;">
+            <span class="featured-ribbon">Mais Escolhido • Garantia de 7 Dias</span>
+            <div class="plan-header" style="text-align: center;">
+              <h3 class="plan-name" style="font-size: 1.85rem;">EdupsychPro Clínico</h3>
+              <p class="plan-desc">Tudo o que você precisa para gerenciar seus atendimentos com excelência.</p>
+            </div>
+            <div class="plan-price-wrapper" style="text-align: center; margin: 1.5rem 0;">
+              <span class="plan-currency">R$</span>
+              <span class="plan-price" style="font-size: 3.5rem;">129</span>
+              <span class="plan-period">/mês</span>
+            </div>
+            <ul class="plan-features-list" style="margin-bottom: 2rem;">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Prontuários e fichas de pacientes ilimitados
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Gerador de Laudos e Pareceres em PDF personalizados
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Protocolos de Anamnese completos e validados
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Gestão financeira de sessões e controle de presença
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Armazenamento em nuvem criptografado (100% LGPD)
+              </li>
+            </ul>
+
+            <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20contratar%20o%20EdupsychPro%20Cl%C3%ADnico%20por%20R$%20129/m%C3%AAs" 
+               class="btn btn-primary" 
+               style="width: 100%;" 
+               target="_blank" 
+               rel="noopener">
+              <span>Ativar Meu Consultório Agora</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container" style="text-align: center;">
+      <a href="index.html" class="brand-logo" style="justify-content: center; margin-bottom: 1rem;">
+        <img src="assets/logo-icon.jpg" alt="AVA Systems Logo" class="brand-logo-img">
+        <span class="brand-name">AVA <span>Systems</span></span>
+      </a>
+      <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 500px; margin: 0 auto 1.5rem auto;">
+        EdupsychPro é um software proprietário desenvolvido pela AVA Systems Tecnologia para psicopedagogia e neuropsicopedagogia.
+      </p>
+      <div style="font-size: 0.85rem; color: var(--text-muted);">
+        <a href="index.html#sistemas" style="color: var(--accent-cyan); text-decoration: none;">← Voltar para a Vitrine de Sistemas</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20o%20EdupsychPro" 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="Falar no WhatsApp sobre o EdupsychPro">
+    <svg viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+</body>
+</html>

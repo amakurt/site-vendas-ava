@@ -1426,6 +1426,361 @@ input:checked + .slider:before {
   color: #FFFFFF;
 }
 
+/* ---------------- Systems Showcase Section (Nossos Sistemas) ---------------- */
+.products-showcase-section {
+  padding: 6.5rem 0;
+  position: relative;
+  background: radial-gradient(circle at 50% 20%, rgba(30, 107, 255, 0.08) 0%, transparent 70%);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  border-radius: 24px;
+  background-color: var(--card-bg);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.015) 100%);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-smooth);
+}
+
+.product-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--gradient-brand);
+  opacity: 0.8;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 210, 211, 0.55);
+  box-shadow: 0 18px 50px rgba(0, 210, 211, 0.18);
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-badge-group {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.product-category-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: rgba(30, 107, 255, 0.15);
+  border: 1px solid rgba(30, 107, 255, 0.4);
+  color: #70aaff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.product-status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  background: rgba(0, 210, 211, 0.1);
+  border: 1px solid rgba(0, 210, 211, 0.25);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+}
+
+.product-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.product-subtitle {
+  font-size: 1rem;
+  color: var(--accent-cyan);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+/* Interactive Preview Widget within card */
+.product-preview-widget {
+  background: #040e1e;
+  border: 1px solid rgba(0, 210, 211, 0.2);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1.75rem;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.6);
+  position: relative;
+  font-size: 0.875rem;
+}
+
+/* WhatsApp Simulator */
+.wa-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 0.85rem;
+  margin-bottom: 0.85rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.wa-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1E6BFF, #00D2D3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #FFFFFF;
+  font-size: 0.85rem;
+}
+
+.wa-user-info {
+  flex: 1;
+}
+
+.wa-name {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+}
+
+.wa-status {
+  font-size: 0.75rem;
+  color: var(--accent-cyan);
+}
+
+.wa-bubble-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.wa-bubble {
+  max-width: 90%;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  line-height: 1.45;
+  font-size: 0.825rem;
+}
+
+.wa-bubble-user {
+  align-self: flex-end;
+  background: #11335f;
+  color: #e2edff;
+  border-bottom-right-radius: 2px;
+}
+
+.wa-bubble-bot {
+  align-self: flex-start;
+  background: rgba(0, 210, 211, 0.08);
+  border: 1px solid rgba(0, 210, 211, 0.25);
+  color: #FFFFFF;
+  border-bottom-left-radius: 2px;
+}
+
+.wa-audio-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.6rem;
+  background: rgba(30, 107, 255, 0.2);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  color: #a4cafe;
+  margin-top: 0.4rem;
+}
+
+/* EdupsychPro Simulator */
+.edupsych-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.edupsych-patient-tag {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+}
+
+.edupsych-badge-live {
+  font-size: 0.75rem;
+  background: rgba(0, 210, 211, 0.15);
+  color: var(--accent-cyan);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+}
+
+.edupsych-dashboard-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.edupsych-kpi-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.edupsych-kpi-label {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.edupsych-kpi-value {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.edupsych-report-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(30, 107, 255, 0.1);
+  border: 1px solid rgba(30, 107, 255, 0.3);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.78rem;
+  color: #FFFFFF;
+}
+
+.edupsych-report-action {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.product-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.product-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.product-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.925rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.45;
+}
+
+.product-features li svg {
+  width: 18px;
+  height: 18px;
+  color: var(--accent-cyan);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.product-price-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.product-price-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.product-price-highlight {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.product-price-highlight span {
+  color: var(--accent-cyan);
+}
+
+.product-actions {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 0.85rem;
+}
+
+.product-actions .btn {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-actions {
+    grid-template-columns: 1fr;
+  }
+  
+  .product-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 /* ---------------- Media Queries & Responsiveness ---------------- */
 @media (max-width: 992px) {
   .contact-wrapper {

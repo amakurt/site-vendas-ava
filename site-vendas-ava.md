@@ -16,16 +16,16 @@
 
 ## Tasks
 
-- [ ] **Task 1: Estrutura Base e Assets**
+- [x] **Task 1: Estrutura Base e Assets**
   - Configurar estrutura limpa de arquivos em `/Users/amauri/Site-vendas/` (`index.html`, `styles.css`, `script.js`, `assets/`).
   - Copiar e integrar assets relevantes (`google-icon.png` para prova social / avaliações).
 
-- [ ] **Task 2: Design System & CSS Moderno (`styles.css`)**
+- [x] **Task 2: Design System & CSS Moderno (`styles.css`)**
   - Implementar tokens de cores (`--bg-dark: #06152B`, `--primary-blue: #1E6BFF`, `--accent-cyan: #00D2D3`, etc.).
   - Tipografia fluida, resets modernos, utilitários de glassmorphism, gradientes e animações de scroll/hover.
   - Responsividade total para Mobile, Tablet e Desktop.
 
-- [ ] **Task 3: Seções da Landing Page de Alta Conversão (`index.html`)**
+- [x] **Task 3: Seções da Landing Page de Alta Conversão (`index.html`)**
   - **Header / Navbar:** Logo AVA Systems, links de navegação suave, badge de status do sistema e CTA "Agendar Demonstração".
   - **Hero Section:** Headline magnética com gradient text, subheadline clara sobre ganhos de produtividade e escala, botões duplos de ação rápida (Testar Agora / Ver Vídeo Demo), métricas de impacto (+98.5% eficiência, +400 empresas, 99.9% uptime) e mockup interativo de dashboard da plataforma.
   - **Social Proof / Clientes:** Logos de empresas atendidas e selo de excelência "4.9/5 estrelas no Google Reviews" usando `google-icon.png`.
@@ -37,14 +37,24 @@
   - **CTA Final & Lead Capture:** Formulário inteligente para solicitação de proposta personalizada ou contato imediato.
   - **Footer:** Informações institucionais, links rápidos, dados de segurança e direitos reservados.
 
-- [ ] **Task 4: Interatividade e Lógica (`script.js`)**
+- [x] **Task 4: Interatividade e Lógica (`script.js`)**
   - Alternador de planos Mensal vs Anual com animação de valores.
   - Acordeão do FAQ com acessibilidade (teclado + aria).
   - Modal interativo de demonstração e integração direta com WhatsApp com mensagem pré-formatada.
   - Contador animado de estatísticas quando visível na tela (IntersectionObserver).
   - Smooth scroll e navbar com blur adaptativo ao rolar a página.
 
-- [ ] **Task 5: Validação, Auditoria de UX e Teste Local**
+- [x] **Task 5: Validação, Auditoria de UX e Teste Local**
   - Iniciar servidor de teste local para validar layout e responsividade.
   - Executar checagens de validação.
   - Registrar mudanças no `SESSION_LOG.md`.
+
+- [ ] **Task 6: Vitrine dos Sistemas Proprietários & Páginas Dedicadas**
+  - Adicionar seção `#sistemas` em `index.html` com cards de destaque para:
+    1. **Kit-Assessor Pessoal no WhatsApp** (Automação, áudio para texto, agenda e follow-up no WhatsApp).
+    2. **EdupsychPro** (Gestão clínica para psicopedagogos, prontuários, laudos e anamneses).
+  - Implementar fluxo de ação dupla (Ação 2-A):
+    - Botão primário para página dedicada do sistema.
+    - Botão secundário de contratação rápida ("Vender aqui mesmo" / WhatsApp direto).
+  - Desenvolver landing pages dedicadas e responsivas para cada software: `kit-assessor.html` e `edupsychpro.html`.
+  - Atualizar `styles.css` e `script.js` com novos cards, previews e integração de checkout.

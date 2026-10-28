@@ -214,6 +214,20 @@ document.addEventListener('DOMContentLoaded', () => {
     openModal(`Plano ${planName}`);
   };
 
+  window.openSystemPurchase = function(systemName) {
+    if (modalPlanSelected) modalPlanSelected.value = systemName;
+    if (modalTitle) modalTitle.textContent = `Contratar ${systemName}`;
+    if (modalBadge) modalBadge.textContent = 'Ativação de Sistema';
+    const modalSubtitle = document.getElementById('modalSubtitle');
+    if (modalSubtitle) {
+      modalSubtitle.textContent = `Preencha seus dados para prosseguir com a contratação e ativação imediata do ${systemName}.`;
+    }
+    if (demoModal) {
+      demoModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
   if (btnCloseModal) btnCloseModal.addEventListener('click', closeModal);
   if (btnOpenDemoNav) btnOpenDemoNav.addEventListener('click', () => openModal('Demonstração VIP'));
   if (btnOpenDemoHero) btnOpenDemoHero.addEventListener('click', () => openModal('Demonstração Interativa'));
@@ -276,10 +290,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const toastMessage = document.getElementById('toastMessage');
 
   const notifications = [
-    { initials: 'RC', msg: 'Roberto C. de Curitiba assinou o Plano Professional', time: 'há 3 minutos' },
-    { initials: 'AL', msg: 'Ana Luísa de São Paulo agendou uma Demonstração VIP', time: 'há 7 minutos' },
-    { initials: 'FM', msg: 'Felipe M. de Campinas assinou o Plano Enterprise', time: 'há 12 minutos' },
-    { initials: 'GS', msg: 'Gabriel S. do Rio de Janeiro ativou a AVA Systems', time: 'há 18 minutos' }
+    { initials: 'RC', msg: 'Roberto C. assinou o Plano Professional AVA', time: 'há 3 minutos' },
+    { initials: 'PL', msg: 'Dra. Patrícia L. ativou o EdupsychPro Clínico', time: 'há 5 minutos' },
+    { initials: 'MV', msg: 'Marcos V. ativou o Kit-Assessor Pessoal no WhatsApp', time: 'há 8 minutos' },
+    { initials: 'AL', msg: 'Ana Luísa agendou uma Demonstração VIP', time: 'há 11 minutos' },
+    { initials: 'GS', msg: 'Gabriel S. assinou o EdupsychPro com suporte anual', time: 'há 16 minutos' }
   ];
 
   let toastIdx = 0;

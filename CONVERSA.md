@@ -86,6 +86,33 @@ Foram feitas 3 perguntas estratégicas para direcionamento do projeto:
 
 ---
 
+### 🔹 Mensagem 3 - Usuário (Retomada & Servidor Local):
+> *"bom dia, vamos continuar, coloque o sistema no ar localmente para testarmos"*
+
+**Ação:** Servidor Python iniciado na porta `3000` em background e site validado em `http://localhost:3000`.
+
+### 🔹 Mensagem 4 - Usuário (Vitrine de Sistemas e Ação de Compra):
+> *"parece bem funcional, agora vamos para ajustes, esse site vai ser pra mim vender meus sistemas então vai ter cards para esses sistemas e ao clicar nesses sistemas ou vai para a landpage do proprio sistema ou uma maneira de já fazer a venda aqui mesmo"*
+
+**Socratic Gate Aplicado:**
+- Levantadas opções de catálogo, jornada do clique e mecanismo de checkout/venda.
+
+### 🔹 Resposta do Usuário com Definição dos Sistemas e Fluxo:
+> - **P0. 1:** 2 sistemas iniciais:
+>   1. `Kit-Assessor pessoal no WhatsApp`
+>   2. `EdupsychPro sistema para psicopedagogos`
+> - **P0. 2:** Opção A (Card com Ação Dupla: link para landing page própria + contratação direta).
+> - **P1. 3:** Priorizar levar para a página do próprio sistema com apresentação própria.
+
+**Implementação Realizada:**
+1. Seção `#sistemas` criada na landing page principal (`index.html`) com cards premium e simulações visuais dos softwares.
+2. Criada página dedicada `kit-assessor.html` com apresentação, simulação do WhatsApp e planos (R$ 97/mês).
+3. Criada página dedicada `edupsychpro.html` com apresentação, prontuário clínico e planos (R$ 129/mês).
+4. Implementada função `openSystemPurchase(systemName)` e toasts em tempo real no `script.js`.
+5. Validação 100% aprovada pelo script de checklist (`checklist.py`).
+
+---
+
 ## 🚀 Próximos Passos Sugeridos
 - Conectar o número real de WhatsApp da AVA Systems no link flutuante e formulários (atualmente configurado com placeholder `5511999999999`).
 - Configurar gateway de pagamento direto ou formulário integrado com webhook (ex: n8n, Make, Typeform ou CRM).

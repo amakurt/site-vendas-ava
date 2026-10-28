@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit-Assessor Pessoal no WhatsApp • AVA Systems</title>
+  <meta name="description" content="Sua secretária executiva e assistente inteligente 24/7 diretamente no seu WhatsApp. Transcrição de áudios, agenda, lembretes e follow-ups automáticos.">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="Kit-Assessor Pessoal no WhatsApp • AVA Systems">
+  <meta property="og:description" content="Secretária executiva 24/7 no WhatsApp. Transcrição de áudios, agenda Google, lembretes e automação de follow-ups.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo-icon.jpg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/jpeg" href="assets/logo-icon.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .subpage-nav {
+      background: rgba(6, 21, 43, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--card-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 1rem 0;
+    }
+    .subpage-nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color var(--transition-fast);
+    }
+    .back-btn:hover {
+      color: var(--accent-cyan);
+    }
+    .hero-landing {
+      padding: 5rem 0 4rem 0;
+      text-align: center;
+    }
+    .chat-showcase-box {
+      max-width: 780px;
+      margin: 3rem auto 0 auto;
+      background: #040e1e;
+      border: 1px solid rgba(0, 210, 211, 0.3);
+      border-radius: 20px;
+      box-shadow: 0 16px 50px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: left;
+    }
+    .chat-topbar {
+      background: rgba(30, 107, 255, 0.15);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .step-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      position: relative;
+    }
+    .step-number {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--gradient-brand);
+      color: #FFFFFF;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      font-size: 1.1rem;
+    }
+    @media (max-width: 860px) {
+      .steps-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Glowing Tech Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+  </div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Subpage Navigation -->
+  <header class="subpage-nav">
+    <div class="container subpage-nav-inner">
+      <a href="index.html#sistemas" class="back-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Voltar para AVA Systems</span>
+      </a>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20ativar%20meu%20Kit-Assessor%20Pessoal%20no%20WhatsApp!" 
+           class="btn btn-primary btn-sm" 
+           target="_blank" 
+           rel="noopener">
+          <span>Ativar Meu Assessor</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Product Hero -->
+    <section class="hero-landing">
+      <div class="container">
+        
+        <div class="section-badge" style="margin-bottom: 1.25rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span>Inteligência Artificial Direto no seu Mensageiro</span>
+        </div>
+
+        <h1 class="section-title" style="font-size: clamp(2.2rem, 5vw, 3.5rem); max-width: 860px; margin: 0 auto 1.5rem auto;">
+          Sua Rotina, Agenda e Follow-ups Organizados <span class="text-gradient">no Piloto Automático</span>
+        </h1>
+
+        <p class="section-description" style="max-width: 720px; margin: 0 auto 2.5rem auto;">
+          Esqueça anotações perdidas, esquecimentos e áudios intermináveis. O <strong>Kit-Assessor Pessoal</strong> é o assistente inteligente que opera 24 horas por dia no seu WhatsApp para multiplicar sua produtividade.
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20ativar%20meu%20Kit-Assessor%20Pessoal%20no%20WhatsApp!" 
+             class="btn btn-primary btn-lg" 
+             target="_blank" 
+             rel="noopener">
+            <span>Quero Ativar Meu Assessor Agora</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#como-funciona" class="btn btn-secondary btn-lg">
+            <span>Como Funciona</span>
+          </a>
+        </div>
+
+        <!-- Realistic WhatsApp Interface Simulator -->
+        <div class="chat-showcase-box">
+          <div class="chat-topbar">
+            <div class="wa-avatar">KA</div>
+            <div>
+              <div style="color: #FFFFFF; font-weight: 700; font-size: 1rem;">Kit-Assessor Pessoal • AVA Systems</div>
+              <div style="color: var(--accent-cyan); font-size: 0.8rem;">● Online 24h • IA Conectada</div>
+            </div>
+          </div>
+          <div style="padding: 1.75rem; display: flex; flex-direction: column; gap: 1rem;">
+            
+            <div class="wa-bubble wa-bubble-user" style="max-width: 80%;">
+              🎙️ <em>[Mensagem de Áudio • 03:42]</em><br>
+              "Oi, preciso que você agende uma reunião com o Dr. Marcos amanhã às 14h, e me lembre de enviar a proposta comercial às 17h30. Ah, e anote que ele prefere pagamento via PIX."
+            </div>
+
+            <div class="wa-bubble wa-bubble-bot" style="max-width: 85%;">
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--accent-cyan); font-weight: 700;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Áudio Transcrito e Ações Executadas:
+              </div>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.85rem; padding-left: 0.25rem;">
+                <li>📅 <strong>Google Agenda:</strong> Reunião com Dr. Marcos criada para amanhã às 14:00.</li>
+                <li>⏰ <strong>Lembrete Definido:</strong> Enviar proposta comercial hoje às 17:30.</li>
+                <li>📝 <strong>Nota Salva:</strong> "Dr. Marcos - Preferência por PIX".</li>
+              </ul>
+              <div style="margin-top: 0.65rem; font-size: 0.75rem; color: rgba(255, 255, 255, 0.6);">
+                Deseja que eu envie um aviso de confirmação da reunião direto para o WhatsApp do Dr. Marcos?
+              </div>
+            </div>
+
+            <div class="wa-bubble wa-bubble-user" style="max-width: 60%;">
+              "Sim, por favor! Envie agora."
+            </div>
+
+            <div class="wa-bubble wa-bubble-bot" style="max-width: 75%;">
+              🚀 <strong>Aviso enviado com sucesso</strong> para Dr. Marcos com data, horário e link de videoconferência.
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- How it Works (3 Steps) -->
+    <section id="como-funciona" style="background: rgba(255, 255, 255, 0.015); border-top: 1px solid rgba(255, 255, 255, 0.05); border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span>Simplicidade Máxima</span>
+          </div>
+          <h2 class="section-title">
+            Como funciona em <span class="text-gradient">3 passos simples</span>
+          </h2>
+          <p class="section-description">
+            Sem instalar aplicativos pesados, sem configurações complicadas. Tudo direto pelo WhatsApp que você já usa todos os dias.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3 style="font-size: 1.25rem; color: #FFFFFF; margin-bottom: 0.75rem;">Ativação em 2 Minutos</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+              Você recebe o link oficial e salva o número do seu Kit-Assessor nos seus contatos do WhatsApp. Pronto, ele já começa a te responder.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3 style="font-size: 1.25rem; color: #FFFFFF; margin-bottom: 0.75rem;">Sincronize com sua Agenda</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+              Conecte com 1 clique o seu Google Agenda ou calendário corporativo. Qualquer compromisso falado no WhatsApp vira evento na agenda.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3 style="font-size: 1.25rem; color: #FFFFFF; margin-bottom: 0.75rem;">Converse em Linguagem Natural</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+              Mande áudios longos, listas de compras, lembretes de clientes ou compromissos. O assessor entende o contexto e executa tudo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features Grid -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span>Diferenciais Exclusivos</span>
+          </div>
+          <h2 class="section-title">
+            Tudo o que o Kit-Assessor <span class="text-gradient">faz por você diariamente</span>
+          </h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="glass-card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </div>
+            <h3 class="feature-title">Transcrição & Síntese de Áudios</h3>
+            <p class="feature-desc">
+              Recebeu um áudio de 5 ou 10 minutos de um cliente? O assessor transcreve e resume os pontos principais em bullets para você ler em 15 segundos.
+            </p>
+          </div>
+
+          <div class="glass-card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3 class="feature-title">Gestão Inteligente de Agenda</h3>
+            <p class="feature-desc">
+              Adiciona, remarca e consulta compromissos apenas conversando. "Que horas é meu primeiro compromisso na quinta-feira?" e receba a resposta na hora.
+            </p>
+          </div>
+
+          <div class="glass-card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </div>
+            <h3 class="feature-title">Lembretes & Follow-up de Clientes</h3>
+            <p class="feature-desc">
+              Peça para ser lembrado de ligar para um lead, pagar uma conta ou cobrar um cliente. Ele te manda uma mensagem no WhatsApp no minuto exato.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Card for Kit-Assessor -->
+    <section style="background: radial-gradient(circle at 50% 50%, rgba(30, 107, 255, 0.12) 0%, transparent 70%);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span>Investimento Acessível</span>
+          </div>
+          <h2 class="section-title">
+            Tenha uma secretária 24/7 por <span class="text-gradient">menos de um cafezinho por dia</span>
+          </h2>
+          <p class="section-description">
+            Sem fidelidade. Cancele quando quiser. Ativação imediata no seu número.
+          </p>
+        </div>
+
+        <div style="max-width: 480px; margin: 0 auto;">
+          <div class="glass-card pricing-card featured" style="padding: 3rem 2.5rem;">
+            <span class="featured-ribbon">Plano Oficial • Ativação Imediata</span>
+            <div class="plan-header" style="text-align: center;">
+              <h3 class="plan-name" style="font-size: 1.85rem;">Kit-Assessor Pessoal</h3>
+              <p class="plan-desc">Acesso irrestrito a todas as funcionalidades de inteligência no WhatsApp.</p>
+            </div>
+            <div class="plan-price-wrapper" style="text-align: center; margin: 1.5rem 0;">
+              <span class="plan-currency">R$</span>
+              <span class="plan-price" style="font-size: 3.5rem;">97</span>
+              <span class="plan-period">/mês</span>
+            </div>
+            <ul class="plan-features-list" style="margin-bottom: 2rem;">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Transcrições de áudio ilimitadas com resumo
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Sincronização com Google Agenda
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Lembretes, listas e notas por voz ou texto
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Disparo de lembretes automáticos para seus clientes
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                Suporte prioritário via WhatsApp AVA Systems
+              </li>
+            </ul>
+
+            <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20contratar%20o%20Kit-Assessor%20Pessoal%20no%20WhatsApp%20por%20R$%2097/m%C3%AAs" 
+               class="btn btn-primary" 
+               style="width: 100%;" 
+               target="_blank" 
+               rel="noopener">
+              <span>Ativar Meu Assessor Agora</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container" style="text-align: center;">
+      <a href="index.html" class="brand-logo" style="justify-content: center; margin-bottom: 1rem;">
+        <img src="assets/logo-icon.jpg" alt="AVA Systems Logo" class="brand-logo-img">
+        <span class="brand-name">AVA <span>Systems</span></span>
+      </a>
+      <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 500px; margin: 0 auto 1.5rem auto;">
+        Kit-Assessor Pessoal é um produto proprietário desenvolvido pela AVA Systems Tecnologia.
+      </p>
+      <div style="font-size: 0.85rem; color: var(--text-muted);">
+        <a href="index.html#sistemas" style="color: var(--accent-cyan); text-decoration: none;">← Voltar para a Vitrine de Sistemas</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20o%20Kit-Assessor%20Pessoal" 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="Falar no WhatsApp sobre o Kit-Assessor">
+    <svg viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+</body>
+</html>
