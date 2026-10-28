@@ -92,5 +92,10 @@ Implementação da **Vitrine de Sistemas Proprietários da AVA Systems** com sup
 5. **Auditoria de Qualidade:**
    - Auditoria master do Antigravity Kit (`checklist.py`) executada: 6/6 testes aprovados (Security, Lint, Schema, Tests, UX Audit e SEO Check).
 
+6. **Integração dos Links Reais dos Sistemas:**
+   - **EdupsychPro:** Integrado o endereço oficial da plataforma (`https://app.edupsychpro.tech/`) com botão de acesso direto ao Web App tanto no card da página principal quanto na landing page dedicada.
+   - **Kit-Assessor Pessoal (KIT OS):** Integrado o endereço da aplicação (`https://137.131.160.171.nip.io/#`) com botão de acesso à plataforma web e landing page estruturada de apresentação.
+   - Adicionada opção de contratação direta consultiva via WhatsApp abaixo dos botões de ação de cada card.
+
 
 

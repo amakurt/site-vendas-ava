@@ -111,6 +111,14 @@ Foram feitas 3 perguntas estratégicas para direcionamento do projeto:
 4. Implementada função `openSystemPurchase(systemName)` e toasts em tempo real no `script.js`.
 5. Validação 100% aprovada pelo script de checklist (`checklist.py`).
 
+### 🔹 Mensagem 5 - Usuário (Links Oficiais dos Sistemas):
+> *"esse é o site do EdupsychPro: https://app.edupsychpro.tech/ e esse do Kit por enquanto sem landpage: https://137.131.160.171.nip.io/#"*
+
+**Implementação e Conexão:**
+- Vinculado o endereço oficial do **EdupsychPro** (`https://app.edupsychpro.tech/`) diretamente no card da página principal e na landing page `edupsychpro.html`.
+- Vinculado o endereço do **Kit-Assessor (KIT OS)** (`https://137.131.160.171.nip.io/#`) com acesso direto e landing page `kit-assessor.html` atuando como a página de vendas oficial que ele ainda não tinha.
+- Adicionadas ações rápidas para acesso web e contratação consultiva direta.
+
 ---
 
 ## 🚀 Próximos Passos Sugeridos

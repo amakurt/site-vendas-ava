@@ -1756,12 +1756,47 @@ input:checked + .slider:before {
 
 .product-actions {
   display: grid;
-  grid-template-columns: 1.25fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 0.85rem;
 }
 
 .product-actions .btn {
   width: 100%;
+}
+
+.product-direct-buy-link {
+  background: none;
+  border: none;
+  color: var(--accent-cyan);
+  font-size: 0.825rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+  display: block;
+  transition: all var(--transition-fast);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  opacity: 0.9;
+}
+
+.product-direct-buy-link:hover {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.product-domain-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #8fc4ff;
+  background: rgba(30, 107, 255, 0.12);
+  border: 1px solid rgba(30, 107, 255, 0.35);
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
 }
 
 @media (max-width: 992px) {
